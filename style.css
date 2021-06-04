@@ -1,0 +1,194 @@
+ *{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right,orange,rgb(238, 238, 42));
+}
+#spanlogo{
+    background-color:beige;
+    width: 40%;
+    height: 100% ;
+    float: right;
+}
+#h1header{
+    float: left;
+    line-height: 100px;
+    padding: 0  15px; 
+    
+}
+#logo{
+    height: 100%;  
+    border-radius: 50%;
+    float: right; 
+    
+}
+nav{
+    width: 60%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    display: inline-block;
+}
+nav li{
+    width: 100px;
+    display: inline-block;
+    line-height: 100px;
+    text-align:center;
+}
+nav a:hover{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 500px;
+    width: 100%;
+    background-color:rgba(245, 220, 174, 0.685);
+    border-top: 3px solid white;
+    animation-name: changecolor;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    float: left;
+}
+aside img{
+    width: 80%;
+}
+#h2aside{
+    padding: 15px 0px;
+    border-bottom: 2px solid brown;
+}
+#icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#icon img{
+    width: 50px;
+    border-bottom: 2px double brown;
+    padding-bottom: 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+#icon img:hover{
+    width: 60px;
+    border-bottom: 2px double red;
+}
+#articlebox{
+    width: 70%;
+    height: 500px;
+    float: right;
+    position: relative;
+}
+#box{
+    width: 400px;
+    height: 200px;
+    background-color:rgb(245, 190, 122);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+#box h1{
+    border-bottom: 3px solid brown;
+    padding: 20px 0px;
+}
+#box p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+    
+}
+#articleimg{
+    width: 100%;
+    height: 600px;
+    border-top: 3px solid white;
+    text-align: center;
+    
+}
+ #articleimg img{
+    width: 350px;
+    height: 200px;
+    margin: 20px; 
+   
+    
+    
+}
+@keyframes changecolor {
+    0%{
+        background-color: rgb(206, 145, 145);
+    }
+    20%{
+        background-color: bisque;
+    }
+    50%{
+        background-color: aquamarine;
+    }
+    75%{
+        background-color: aqua;
+    }
+    100%{
+        background-color:rgba(245, 220, 174, 0.685); 
+    }
+    
+}
+@media only screen and (min-width:900px) and (max-width:1500px) {
+   aside{
+       width: 35%;
+   }
+   #articlebox{
+       width: 65%;
+   } 
+  } 
+  @media only screen and (max-width:900px) and (min-width:790px){
+    #spanlogo{
+        width: 45%;
+    }
+}
+@media only screen and (max-width:790px){
+    header,main{
+        height: auto;
+    }
+    #spanlogo{
+        width: 100%;
+        text-align: center;
+        background-color: rgba(248, 69, 69, 0.925);
+    }
+    #h1header,#logo{
+        float: none;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    #articlebox{
+        height: 240px;
+        width: 100%;
+        
+    }
+}
+@media only screen and (max-width:500px){
+    nav li{
+        display: block;
+        width: 100%;
+    }
+}
+ 
+     
+ 
+ 
